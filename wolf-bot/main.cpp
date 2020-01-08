@@ -16,13 +16,9 @@
 void dejectPrevious()
 {
 	SocketClient socketClient = SocketClient();
-	printf("attempting to deject\n");
 	socketClient.clientConnect("127.0.0.1", "6666");
-	Sleep(10);
 	socketClient.clientSend("deject\r\n");
-	Sleep(10);
 	socketClient.clientClose();
-	Sleep(10);
 }
 
 int main(int argc, char* argv[]) {
