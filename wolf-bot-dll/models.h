@@ -22,7 +22,7 @@ public:
 
 };
 
-// This class needs to be 3 bytes long. Do not add virtual functions since this will add a vtable to the struct
+// This class needs to be 3 bytes long. Do not add virtual functions since this will add a vtable pointer to the struct
 class Rgb {
 
 public:
